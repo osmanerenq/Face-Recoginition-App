@@ -1,10 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <meta charset="UTF-8" />
+    <title>Giriş Yap - Yüz Tanıma</title>
+    <link rel="stylesheet" type="text/css" href="/public/CommonforUI.css" />
+    <script defer src="https://cdn.jsdelivr.net/npm/face-api.js"></script>
+    <script defer src="/public/login.js"></script>
 </head>
 <body>
-
+<div class="container">
+    <h1>Giriş Yap</h1>
+    <button id="startBtn">Kamera Aç ve Yüzü Tanı</button>
+    <video id="video" autoplay muted></video>
+    <p id="status"></p>
+</div>
 </body>
 </html>
