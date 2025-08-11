@@ -1,10 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <meta charset="UTF-8" />
+    <title>Kayıt Ol - Yüz Tanıma</title>
+    <link rel="stylesheet" type="text/css" href="/public/CommonforUI.css" />
+    <script defer src="https://cdn.jsdelivr.net/npm/face-api.js"></script>
+    <script defer src="/public/register.js"></script>
 </head>
 <body>
-
+<div class="container">
+    <h1>Kayıt Ol</h1>
+    <input id="username" type="text" placeholder="Kullanıcı Adı" autocomplete="off" />
+    <button id="startBtn">Kamera Aç ve Yüzü Kaydet</button>
+    <video id="video" autoplay muted></video>
+    <p id="status"></p>
+</div>
 </body>
 </html>
