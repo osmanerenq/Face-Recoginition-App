@@ -57,6 +57,9 @@ async function sendToBackend(descriptor) {
 
         const result = await response.json();
         if (response.ok && result.authenticated) {
+            setTimeout(() => {
+                window.location.href = "protectedsite.html";
+            }, 1000);
             status.textContent = `Giriş başarılı! Hoş geldiniz, ${result.username || 'kullanıcı'}.`;
         } else {
             status.textContent = 'Giriş başarısız: Yüz tanınamadı veya kayıtlı değil.';
