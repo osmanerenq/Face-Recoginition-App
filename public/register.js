@@ -89,7 +89,6 @@ startBtn.addEventListener('click', async () => {
     }
 });
 
-// Check if face-api.js is loaded
 window.addEventListener('load', () => {
     if (typeof faceapi === 'undefined') {
         status.textContent = 'face-api.js yüklenemedi. Lütfen kütüphanenin doğru yüklendiğinden emin olun.';
